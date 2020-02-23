@@ -1,0 +1,49 @@
+@import './assets/fonts/fonts.css';
+
+* {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.header {
+    background-color: #2d303a;
+    height: 95px;
+    box-sizing: border-box;
+    border-bottom: 6px solid #323746;
+}
+
+.header .wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    padding-top: 11px;
+}
+
+.navbar-list-item {
+    position: relative;
+    height: 30px;
+    margin-left: 28.67px;
+    margin-top: 18px;
+}
+
+.navbar-list-item a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    height: 100%;
+}
+
+.navbar-list-item a:hover {
+    color: #f06c64;
+  }
