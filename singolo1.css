@@ -75,4 +75,34 @@
     justify-content: center;
 }
 
+.slider {
+    background-color: #f06c64;
+    box-sizing: border-box;
+    border-bottom: 6px solid #ea676b;
+    position: relative;
+}
 
+.slider-button {
+    width: 16px;
+    height: 27px;
+    background: url("./assets/img/left-button.png") no-repeat;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.slider-button:hover {
+    filter: brightness(20%);
+}
+
+.right-button {
+    transform: rotate(180deg);
+}
+
+.slider .wrapper {
+    padding-top: 53px;
+    padding-bottom: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
