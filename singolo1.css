@@ -5,6 +5,26 @@
     font-family: "Lato", sans-serif;
 }
 
+.main-header-hidden {
+    font-size: 0;
+    color: transparent;
+}
+
+.logo{
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -0.7px;
+  }
+  
+.logo::after {
+    content: "*";
+    color: #f06c64;
+  }
+
 .wrapper {
     max-width: 1020px;
     padding: 0 40px;
@@ -50,6 +70,15 @@
     display: block;
     height: 100%;
 }
+
+.navbar-list-item:not(:last-child)::after {
+    content: ".";
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: -3px;
+    color: #494e62;
+  }
 
 .navbar-list-item a:hover {
     color: #f06c64;
