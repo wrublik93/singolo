@@ -54,24 +54,8 @@ h3 {
     padding-bottom: 67px;
   }
 
-.social-networks {
-    margin-top: 24px;
-    padding-left: 1px;
-}
 
-.social-networks .social-networks-icon {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #666d89;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 
-.social-networks-icon.icon-facebook {
-    background-image: url('./assets/img/social_networks/facebook.svg');
-}
 
 .portfolio-images {
     display: grid;
@@ -160,3 +144,38 @@ button {
       line-height: 1.75em;
   }
   
+
+  .social-networks {
+    margin-top: 24px;
+    padding-left: 1px;
+}
+
+.social-networks .social-networks-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #666d89;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.social-networks .social-networks-icon:not(:first-child) {
+    margin-left: 4px;
+  }
+
+.icon-facebook {
+    background-image: url('./assets/img/social_networks/facebook.svg');
+}
+
+.icon-google-plus {
+  background-image: url('./assets/img/social_networks/google-plus.svg');
+}
+
+.icon-twitter {
+  background-image: url('./assets/img/social_networks/twitter.svg');
+}
+
+.icon-linkedin {
+  background-image: url('./assets/img/social_networks/linkedin.svg');
+}
