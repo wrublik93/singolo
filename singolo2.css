@@ -170,12 +170,15 @@ button {
 
 .icon-google-plus {
   background-image: url('./assets/img/social_networks/google-plus.svg');
+  background-position-x: 7px;
 }
 
 .icon-twitter {
   background-image: url('./assets/img/social_networks/twitter.svg');
+  background-position-x: 7px;
 }
 
 .icon-linkedin {
   background-image: url('./assets/img/social_networks/linkedin.svg');
+  background-position-y: 7px;
 }
