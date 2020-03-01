@@ -50,6 +50,8 @@ h3 {
 .about-us {
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
+    padding-top: 59px;
+    padding-bottom: 67px;
   }
 
 .social-networks {
@@ -123,5 +125,38 @@ button {
     color: #dedede;
     border-color: #dedede;
     cursor: default;
+  }
+
+  .about-us-layout {
+    display: flex;
+    margin-top: 45px;
+  }
+
+  .about-us-person {
+    width: 300px;
+  }
+
+  .about-us-person:nth-child(2) {
+    margin-left: 19px;
+  }
+
+  .about-us-person:nth-child(3) {
+    margin-left: 21px;
+  }
+
+  .about-us-person h3 {
+    margin-top: 13px;
+    letter-spacing: -0.005em;
+    line-height: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .about-us-person p {
+      margin-top: 8px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 1.75em;
   }
   
