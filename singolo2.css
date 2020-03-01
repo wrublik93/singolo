@@ -147,6 +147,28 @@ button {
   line-height: 1.75em;
 }
 
+.about-us-person:nth-child(2) h3 {
+  letter-spacing: -0.01em;
+}
+
+.about-us-person:nth-child(3) h3,
+.about-us-person:nth-child(3) p,
+.about-us-person:nth-child(3) .social-icons {
+  margin-left: -1px;
+}
+
+.about-us-person:nth-child(3) h3 {
+  letter-spacing: 0.005em;
+}
+
+.about-us-person:nth-child(3) p {
+  letter-spacing: -0.003em;
+}
+
+.about-us-person:nth-child(2) p {
+  letter-spacing: 0;
+}
+
 /*style for social networks*/
 .social-networks {
   margin-top: 24px;
@@ -189,3 +211,4 @@ button {
 .social-networks .social-networks-icon:hover {
   opacity: 0.4;
 }
+
