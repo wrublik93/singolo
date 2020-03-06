@@ -1,0 +1,63 @@
+@import './assets/fonts/fonts.css';
+
+/*nulling properties*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+}
+
+/*fix width screen*/
+.wrapper {
+    max-width: 1020px;
+    padding: 0 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+
+  /*style for social networks*/
+.social-networks {
+    margin-top: 24px;
+    padding-left: 1px;
+  }
+  
+  .social-networks .social-networks-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #666d89;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .social-networks .social-networks-icon:not(:first-child) {
+    margin-left: 4px;
+    }
+  
+  .icon-facebook {
+    background-image: url('./assets/img/social_networks/facebook.svg');
+  }
+  
+  .icon-google-plus {
+    background-image: url('./assets/img/social_networks/google-plus.svg');
+    background-position-x: 7px;
+  }
+  
+  .icon-twitter {
+    background-image: url('./assets/img/social_networks/twitter.svg');
+    background-position-x: 7px;
+  }
+  
+  .icon-linkedin {
+    background-image: url('./assets/img/social_networks/linkedin.svg');
+    background-position-y: 7px;
+  }
+  
+  .social-networks .social-networks-icon:hover {
+    opacity: 0.4;
+  }
+  
+  
