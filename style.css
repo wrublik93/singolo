@@ -1,0 +1,317 @@
+@import './assets/fonts/fonts.css';
+
+/*--------------------------------*/
+/*COMMON STYLES*/
+/*--------------------------------*/
+
+/*nulling properties*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+}
+
+/*fix width screen*/
+.wrapper {
+    max-width: 1020px;
+    padding: 0 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header,
+.slider,
+.services {
+    width: 100%;
+}
+
+/*--------------------------------*/
+/*BLOCK HEADER*/
+/*--------------------------------*/
+
+/*styles for h1 main header*/
+.main-header-hidden {
+    font-size: 0;
+    color: transparent;
+}
+
+.header {
+    background-color: #2d303a;
+    height: 95px;
+    box-sizing: border-box;
+    border-bottom: 6px solid #323746;
+    color: #ffffff;
+}
+
+.header .wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*styles for logo*/
+.logo{
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -0.7px;
+}
+  
+.logo::after {
+    content: "*";
+    color: #f06c64;
+}
+
+/*styles for navbar*/
+.navbar-list {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    padding-top: 11px;
+}
+
+.navbar-list-item {
+    position: relative;
+    height: 30px;
+    margin-left: 28.67px;
+    margin-top: 18px;
+}
+
+.navbar-list-item a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    height: 100%;
+}
+
+.navbar-list-item a:hover {
+    color: #f06c64;
+}
+
+/*styles for points between elements in the navbar*/
+.navbar-list-item:not(:last-child)::after {
+    position: absolute;
+    right: -15px;
+    top: 0;
+    display: block;
+    color: #494e62;
+    content: "\00B7";
+}
+
+/*--------------------------------*/
+/*SECTION SLIDER*/
+/*--------------------------------*/
+
+.slider {
+    background-color: #f06c64;
+    box-sizing: border-box;
+    border-bottom: 6px solid #ea676b;
+    position: relative;
+}
+
+.slider .wrapper {
+    padding-top: 53px;
+    padding-bottom: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*styles for buttons in the section slider*/
+.slider-button {
+    width: 16px;
+    height: 27px;
+    background: url("./assets/img/slider/slider-button-arrow.png") no-repeat;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.slider-button:hover {
+    filter: brightness(20%);
+}
+
+.right-button {
+    transform: rotate(180deg);
+}
+
+/*styles for phones (common)*/
+.phone {
+    background-repeat: no-repeat;  
+}
+
+/*styles for vertical phone (left phone)*/
+.phone-vertical {
+    width: 240px;
+    height: 483px;
+    background-image: url("assets/img/slider/phone-vertical.png");
+}
+
+.slider-phone-left {
+    position: relative;
+    left: -6px;
+}
+
+/*styles for horizontal phone (right phone)*/
+.phone-horizontal {
+    width: 483px;
+    height: 240px;
+    background-image: url("assets/img/slider/phone-horizontal.png");
+}
+
+.slider-phone-right {
+    position: relative;
+    left: 5px;
+}
+
+/*styles for displays phones (common)*/
+.phone .phone-display {
+    position: absolute;
+}
+
+.phone-vertical .phone-display {
+    left: 14px; 
+    top: 65px; 
+}
+ 
+ .phone-horizontal .phone-display {
+    left: 60px;
+    top: 13px;
+}
+
+/*--------------------------------*/
+/*SECTION SERVICES*/
+/*--------------------------------*/
+
+.services {
+    padding-top: 59px;
+    padding-bottom: 30px;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid white;
+}
+
+.services h2, 
+.services h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 900;
+    color: #666d89;
+}
+
+.services h2 {
+    font-size: 30px;
+}
+
+.services h3 {
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    line-height: 0.8em;
+}
+
+.services p {
+    font: 300 18px/30px "Lato";
+    text-align: justify;
+    letter-spacing: -0.012em;
+    margin-top: 18px;
+    margin-bottom: 0;
+    color: #767e9e;
+}
+
+/*styles for three-column layout (flex)*/
+.services-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 47px;
+    padding-left: 1px;
+}
+
+.services-layout p {
+    margin-top: 12px;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: -0.005em;
+    line-height: 1.84em;
+}
+
+/*styles for each service (common)*/
+.services-item {
+    width: 220px;
+    margin-bottom: 31px;
+    padding-left: 80px;
+    background: transparent no-repeat top left;
+}
+
+.services-item p {
+    max-height: 65px;
+    overflow: hidden;
+    hyphens: manual;
+}
+
+/*special styles for feel like a star*/
+.services-item:last-child p {
+    letter-spacing: normal;
+}
+
+/*special styles for inovative ideas and support*/
+.services-item:nth-child(3n+2) {
+    margin-left: -0.1em;
+}
+
+/*special styles for headers inovative ideas, love is the answer answer and feel like a star*/
+.services-item:nth-child(2) h3,
+.services-item:nth-child(3n) h3 {
+    letter-spacing: 0;
+}
+
+/*special styles for header responsive layout*/
+.services-item:nth-child(4) h3 {
+    padding-top: 0.8px;
+    letter-spacing: -0.009em;
+}
+
+/*special styles for header support*/
+.services-item:nth-child(5) h3 {
+    letter-spacing: -0.029em;
+    padding-top: 0.8px;
+}
+
+/*special styles for header feel like a star*/
+.services-item:nth-child(6) h3 {
+    padding-top: 1px;
+}
+
+
+/*icons for services*/
+.custom-design {
+    background-image: url("./assets/img/services/custom-design.svg");
+}
+
+.inovative-ideas {
+    background-image: url("./assets/img/services/inovative-ideas.svg");
+}
+
+.love-answer {
+    background-image: url("./assets/img/services/love-answer.svg");
+}
+
+.responsive-layout {
+    background-image: url("./assets/img/services/responsive-layout.svg");
+}
+
+.support {
+    background-image: url("./assets/img/services/support.svg");
+}
+
+.feel-star {
+    background-image: url("./assets/img/services/feel-star.svg");
+}
