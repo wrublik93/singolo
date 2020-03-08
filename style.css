@@ -644,7 +644,10 @@ a.selected {
 /*styles for placeholders in the contact form*/
 .contact-form ::placeholder {
   color: #f48c8f;
-  opacity: 1;
+}
+
+.contact-form ::-webkit-input-placeholder {
+    color: #f48c8f;
 }
 
 .contact-form input {
