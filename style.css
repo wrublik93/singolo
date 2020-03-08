@@ -699,10 +699,10 @@ a.selected {
 }
 
 .contact-form button:hover {
-  padding: 13px 15px 11px;
+  padding: 12px 14px 10px;
   background-color: white;
   color: #f06c64;
-  border: none;
+  border: 1px solid #f06c64; 
 }
 
 /*styles for contact information*/
