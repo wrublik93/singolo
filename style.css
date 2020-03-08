@@ -663,6 +663,16 @@ a.selected {
   margin-bottom: 16px;
 }
 
+.contact-form .contact-form-name {
+    margin-bottom: 17px;
+    letter-spacing: -0.007em;
+}
+
+.contact-form .contact-form-subject {
+    margin-bottom: -1px;
+    letter-spacing: -0.021em;
+}
+
 .contact-form textarea {
   margin-bottom: 16px;
   margin-top: 18px; 
