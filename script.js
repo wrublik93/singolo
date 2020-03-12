@@ -8,7 +8,7 @@ MENU.addEventListener('click', (event) => {
 });
 
 PORTFOLIO_TABS.addEventListener('click', (event) => {
-    if(event.target.classList[1] !== 'selected') {
+    if(event.target.classList[1] !== 'selected' && event.target.tagName == 'BUTTON') {
         PORTFOLIO_TABS.querySelectorAll('button').forEach (el => el.classList.remove('selected'));
         event.target.classList.add('selected');
         let copy = [];
