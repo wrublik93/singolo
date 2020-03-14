@@ -7,17 +7,17 @@
     <title>Singolo</title>
 </head>
 <body>
-    <header class="header" id="home-anchor">
+    <header class="header">
         <div class="wrapper">
             <a class="logo" href="">singolo</a>
             <h1 class="main-header-hidden">Singolo</h1>
             <nav class="navbar">
                 <ul class="navbar-list">
-                    <li class="navbar-list-item"><a href="#home-anchor" class="selected" href="">home</a></li>
-                    <li class="navbar-list-item"><a href="#services-anchor">services</a></li>
-                    <li class="navbar-list-item"><a href="#portfolio-anchor">portfolio</a></li>
-                    <li class="navbar-list-item"><a href="#about-anchor">about</a></li>
-                    <li class="navbar-list-item"><a href="#contact-anchor">contact</a></li>
+                    <li class="navbar-list-item"><a class="navbar-list-item-home selected" href="#">home</a></li>
+                    <li class="navbar-list-item"><a class="navbar-list-item-services" href="#services">services</a></li>
+                    <li class="navbar-list-item"><a class="navbar-list-item-portfolio" href="#portfolio">portfolio</a></li>
+                    <li class="navbar-list-item"><a class="navbar-list-item-about" href="#about">about</a></li>
+                    <li class="navbar-list-item"><a class="navbar-list-item-contact" href="#contact">contact</a></li>
                 </ul>    
             </nav>
         </div>
@@ -35,7 +35,7 @@
                 <button type="button" class="slider-button right-button"></button>
             </div>
         </section>
-        <section class="services" id="services-anchor">
+        <section class="services"> 
             <div class="wrapper">
                 <h2>Our Services</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
@@ -76,7 +76,8 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio" id="portfolio-anchor">
+        <section></section>
+        <section class="portfolio">
             <div class="wrapper">
                 <h2>Portfolio</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -102,7 +103,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-us" id="about-anchor">
+        <section class="about-us">
             <div class="wrapper">
                 <div class="about-us-header">
                     <h2>About Us</h2>
@@ -147,31 +148,43 @@
                 </div>
             </div>
         </section>
-        <section class="quotes" id="contact-anchor">
+        <section class="quotes">
             <div class="wrapper">
                 <h2>Get a Quote</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
                     Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget 
                     lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-                     tortor mauris condimentum nibh.</p>
-                    <div class="contact-layout">
-                        <form class="contact-form" method="POST">
-                            <input class="contact-form-name" type="text" name="name" placeholder="Name (Required)" required>
-                            <input type="email" name="email" placeholder="Email (Required)" required>
-                            <input class="contact-form-subject" type="text" name="subject" placeholder="Subject">
-                            <textarea class="contact-form-description" name="description" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>
-                            <button type="submit" formmethod="POST">Submit</button> 
-                        </form>
-                        <div class="contact-info">
-                            <h3>Contact Information</h3>
-                            <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. 
-                                Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed 
-                                nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                            <p class="address">Elm St. 14/05 Lost City</p>
-                            <a class="phone" href="tel:035283318635">03528 331 86 35</a>
-                            <a class="email" href="mailto:info@singolo.com">info@singolo.com</a>
-                        </div>
+                     tortor mauris condimentum nibh.
+                </p>
+                <div class="contact-layout">
+                    <!-- <form class="contact-form" method="POST"> -->
+                    <form class="contact-form" method="POST">
+                        <input class="contact-form-name" type="text" name="name" placeholder="Name (Required)" required>
+                        <input class="contact-form-email" type="email" name="email" placeholder="Email (Required)" required>
+                        <input class="contact-form-subject" type="text" name="subject" placeholder="Subject">
+                        <textarea class="contact-form-description" name="description" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>
+                        <!-- <button type="submit" formmethod="POST">Submit</button>  -->
+                        <button class="contact-form-submit">Submit</button> 
+                    </form>
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. 
+                            Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed 
+                            nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+                        </p>
+                        <p class="address">Elm St. 14/05 Lost City</p>
+                        <a class="phone" href="tel:035283318635">03528 331 86 35</a>
+                        <a class="email" href="mailto:info@singolo.com">info@singolo.com</a>
                     </div>
+                </div>
+                <div class="block-message block-message-hidden">
+                    <div class="message">
+                        <p>Письмо отправлено</p>
+                        <hr>
+                        <p class="block-message-subject"></p>
+                        <p class="block-message-description"></p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
