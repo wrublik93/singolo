@@ -128,6 +128,8 @@ PORTFOLIO_IMAGES_BORDER.addEventListener('click', (event)=>{
     if(event.target.classList[0] !== 'portfolio-image-border' && event.target.tagName == 'IMG') {
         PORTFOLIO_IMAGES_BORDER.querySelectorAll('img').forEach(el => el.classList.remove('portfolio-image-border'));
         event.target.classList.add('portfolio-image-border');
+    } else if(event.target.classList[0] == 'portfolio-image-border' && event.target.tagName == 'IMG') {
+        PORTFOLIO_IMAGES_BORDER.querySelectorAll('img').forEach(el => el.classList.remove('portfolio-image-border'));
     }
 });
 

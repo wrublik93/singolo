@@ -421,6 +421,7 @@ a.selected {
   }
   
   .filter {
+    user-select: none;
     margin: 10px 0 19px;
     padding-left: 1px;
   }
@@ -487,11 +488,21 @@ a.selected {
     margin-top: 19px;
     max-height: 604px;
   }
+
+  .portfolio-images {
+    user-select: none;
+  }
+
+  .portfolio-images img:hover:not(.portfolio-image-border) {
+    cursor: pointer;
+    opacity: 0.4;
+  }
   
   .portfolio-image-border {
     border: 5px solid  #F06C64;
     width: 210px;
     height: 177px;
+    cursor: pointer;
   }
   
   /*--------------------------------*/
