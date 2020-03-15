@@ -991,6 +991,18 @@ a.selected {
 
 
 
+/*ssssssssssssssssssssssssssssssss*/
+.button-phone-left {
+  height: 43px;
+  width: 43px;
+  position: relative;
+  top: 187px;
+  left: -196px;
+  border-radius: 50%;
+}
+
+
+
 
 
 
