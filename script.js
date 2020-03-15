@@ -188,3 +188,12 @@ BUTTON_PHONE_LEFT.addEventListener('click', (event) => {
     };
 });
 
+BUTTON_PHONE_RIGHT.addEventListener('click', (event) => {
+    console.log(document.querySelector('.phone-horizontal img').classList.value.includes('display-hidden'));
+    if(!document.querySelector('.phone-horizontal img').classList.value.includes('display-hidden')) {
+        document.querySelector('.phone-horizontal img').classList.add('display-hidden')
+    } else if(document.querySelector('.phone-horizontal img').classList.value.includes('display-hidden')) {
+        document.querySelector('.phone-horizontal img').classList.remove('display-hidden')
+    };
+});
+
