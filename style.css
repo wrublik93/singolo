@@ -1002,6 +1002,11 @@ a.selected {
 }
 
 
+.display-hidden {
+  display: none;
+}
+
+
 
 
 

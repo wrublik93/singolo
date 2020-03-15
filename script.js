@@ -30,6 +30,12 @@ const ABOUT_LINK = document.querySelector('.navbar-list-item-about');
 const CONTACT_LINK = document.querySelector('.navbar-list-item-contact');
 
 //----------------------------
+// PHONES
+//----------------------------
+const BUTTON_PHONE_LEFT = document.querySelector('.button-phone-left');
+const BUTTON_PHONE_RIGHT = document.querySelector('.button-phone-right');
+
+//----------------------------
 // CONTACT FORM
 //----------------------------
 const CONTACT_FORM = document.querySelector('.contact-form');
@@ -172,4 +178,13 @@ MESSAGE_AGREE_HIDDEN.addEventListener('click', (event) => {
     CONTACT_FORM.reset();
 });
 
+
+BUTTON_PHONE_LEFT.addEventListener('click', (event) => {
+    console.log(document.querySelector('.phone-vertical img').classList.value.includes('display-hidden'));
+    if(!document.querySelector('.phone-vertical img').classList.value.includes('display-hidden')) {
+        document.querySelector('.phone-vertical img').classList.add('display-hidden')
+    } else if(document.querySelector('.phone-vertical img').classList.value.includes('display-hidden')) {
+        document.querySelector('.phone-vertical img').classList.remove('display-hidden')
+    };
+});
 
