@@ -237,41 +237,42 @@ SCREEN_PHONE_RIGHT.addEventListener('click', (event) => {
 //----------------------------
 // SLIDER_TASK: change images
 //----------------------------
-document.querySelector('.slider .right-button').addEventListener('click', (event) => {
-    document.querySelector('.slider').classList.add('wrooom');
-    if(document.querySelector('.slider').classList.value.includes('slide_one')) {
-        document.querySelector('.slider').classList.remove('slide_one');
-        document.querySelector('.slider').classList.add('slider_two');
-        document.querySelector('.slider-phone-left').classList.add('slide-hidden');
-        document.querySelector('.slider-phone-left').classList.add('wrooom');
-        document.querySelector('.slider-phone-right').classList.add('slide-hidden');
-        document.querySelector('.slider-three-phone').classList.remove('slide-two-hidden');
+const SLIDER_LEFT_BUTTON = document.querySelector('.slider .left-button');
+const SLIDER_RIGHT_BUTTON = document.querySelector('.slider .right-button');
+const SLIDER_PHONE_LEFT = document.querySelector('.slider-phone-left');
+const SLIDER_PHONE_RIGHT = document.querySelector('.slider-phone-right');
+const SLIDER_THREE_PHONE = document.querySelector('.slider-three-phone');
 
+SLIDER_RIGHT_BUTTON.addEventListener('click', (event) => {
+    if(SLIDER.classList.value.includes('slide_one')) {
+        SLIDER.classList.remove('slide_one');
+        SLIDER.classList.add('slider_two');
+        SLIDER_PHONE_LEFT.classList.add('slide-hidden');
+        SLIDER_PHONE_RIGHT.classList.add('slide-hidden');
+        SLIDER_THREE_PHONE.classList.remove('slide-two-hidden');
     } else {
-        document.querySelector('.slider').classList.remove('slider_two');
-        document.querySelector('.slider').classList.add('slide_one');
-        document.querySelector('.slider-phone-left').classList.remove('slide-hidden');
-        document.querySelector('.slider-phone-right').classList.remove('slide-hidden');
-        document.querySelector('.slider-three-phone').classList.add('slide-two-hidden');
+        SLIDER.classList.remove('slider_two');
+        SLIDER.classList.add('slide_one');
+        SLIDER_PHONE_LEFT.classList.remove('slide-hidden');
+        SLIDER_PHONE_RIGHT.classList.remove('slide-hidden');
+        SLIDER_THREE_PHONE.classList.add('slide-two-hidden');
     }
 });
 
-document.querySelector('.slider .left-button').addEventListener('click', (event) => {
-    document.querySelector('.slider').classList.add('wrooom');
-    if(document.querySelector('.slider').classList.value.includes('slide_one')) {
-        document.querySelector('.slider').classList.remove('slide_one');
-        document.querySelector('.slider').classList.add('slider_two');
-        document.querySelector('.slider-phone-left').classList.add('slide-hidden');
-        document.querySelector('.slider-phone-left').classList.add('wrooom');
-        document.querySelector('.slider-phone-right').classList.add('slide-hidden');
-        document.querySelector('.slider-three-phone').classList.remove('slide-two-hidden');
+SLIDER_LEFT_BUTTON.addEventListener('click', (event) => {
+    if(SLIDER.classList.value.includes('slide_one')) {
+        SLIDER.classList.remove('slide_one');
+        SLIDER.classList.add('slider_two');
+        SLIDER_PHONE_LEFT.classList.add('slide-hidden');
+        SLIDER_PHONE_RIGHT.classList.add('slide-hidden');
+        SLIDER_THREE_PHONE.classList.remove('slide-two-hidden');
 
     } else {
-        document.querySelector('.slider').classList.remove('slider_two');
-        document.querySelector('.slider').classList.add('slide_one');
-        document.querySelector('.slider-phone-left').classList.remove('slide-hidden');
-        document.querySelector('.slider-phone-right').classList.remove('slide-hidden');
-        document.querySelector('.slider-three-phone').classList.add('slide-two-hidden');
+        SLIDER.classList.remove('slider_two');
+        SLIDER.classList.add('slide_one');
+        SLIDER_PHONE_LEFT.classList.remove('slide-hidden');
+        SLIDER_PHONE_RIGHT.classList.remove('slide-hidden');
+        SLIDER_THREE_PHONE.classList.add('slide-two-hidden');
     }
 });
 
