@@ -217,6 +217,18 @@ SCREEN_PHONE_LEFT.addEventListener('click', (event) => {
     if(PHONE_VERTICAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_VERTICAL_IMG.classList.remove('display-hidden')
     };
-})
+});
+
+PHONE_HORIZONTAL_IMG.addEventListener('click', (event) => {
+    if(!PHONE_HORIZONTAL_IMG.classList.value.includes('display-hidden')) {
+        PHONE_HORIZONTAL_IMG.classList.add('display-hidden')
+    };
+});
+
+SCREEN_PHONE_RIGHT.addEventListener('click', (event) => {
+    if(PHONE_HORIZONTAL_IMG.classList.value.includes('display-hidden')) {
+        PHONE_HORIZONTAL_IMG.classList.remove('display-hidden')
+    };
+});
 
 
