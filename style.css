@@ -1049,6 +1049,15 @@ a.selected {
 .three-phone-screen-center {
   height: 354px;
     background-color: black;
+
+    width: 201px;
+    position: absolute;
+    margin-left: 145px;
+    margin-top: 69px;
+}
+
+.three-phone-screen-center-transparent {
+  height: 354px;  
     width: 201px;
     position: absolute;
     margin-left: 145px;
@@ -1075,6 +1084,14 @@ a.selected {
     margin-top: 151px;
 }
 
+.three-phone-screen-left-transparent {
+  height: 218px;  
+    width: 123px;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 151px;
+}
+
 
 
 
@@ -1090,6 +1107,14 @@ a.selected {
 .three-phone-screen-right {
   height: 218px;
     background-color: #252a30;
+    width: 123px;
+    position: absolute;
+    margin-left: 369px;
+    margin-top: 151px;
+}
+
+.three-phone-screen-right-transparent {
+  height: 218px;
     width: 123px;
     position: absolute;
     margin-left: 369px;
