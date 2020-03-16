@@ -276,7 +276,59 @@ SLIDER_LEFT_BUTTON.addEventListener('click', (event) => {
     }
 });
 
+//----------------------------
+// SLIDER_2_TASK: turning on phone (center) with button
+//----------------------------
+const THREE_PHONE_BUTTON_CENTER = document.querySelector('.three-phone-button-center');
+const THREE_PHONE_SCREEN_CENTER = document.querySelector('.three-phone-screen-center');
 
+THREE_PHONE_BUTTON_CENTER.addEventListener('click', (event) => {
+    if(THREE_PHONE_SCREEN_CENTER.classList.value.includes('display-hidden')) {
+        THREE_PHONE_SCREEN_CENTER.classList.remove('display-hidden')
+    } else if(!THREE_PHONE_SCREEN_CENTER.classList.value.includes('display-hidden')) {
+        THREE_PHONE_SCREEN_CENTER.classList.add('display-hidden')
+    }
+});
+
+//----------------------------
+// SLIDER_2_TASK: turning on phone (left) with button
+//----------------------------
+const THREE_PHONE_BUTTON_LEFT = document.querySelector('.three-phone-button-left');
+const THREE_PHONE_SCREEN_LEFT = document.querySelector('.three-phone-screen-left');
+
+THREE_PHONE_BUTTON_LEFT.addEventListener('click', (event) => {
+    if(THREE_PHONE_SCREEN_LEFT.classList.value.includes('display-hidden')) {
+        THREE_PHONE_SCREEN_LEFT.classList.remove('display-hidden')
+    } else if(!THREE_PHONE_SCREEN_LEFT.classList.value.includes('display-hidden')) {
+        THREE_PHONE_SCREEN_LEFT.classList.add('display-hidden')
+    }
+});
+
+//----------------------------
+// SLIDER_2_TASK: turning on phone (right) with button
+//----------------------------
+const THREE_PHONE_BUTTON_RIGHT = document.querySelector('.three-phone-button-right');
+const THREE_PHONE_SCREEN_RIGHT = document.querySelector('.three-phone-screen-right');
+
+THREE_PHONE_BUTTON_RIGHT.addEventListener('click', (event) => {
+    if(THREE_PHONE_SCREEN_RIGHT.classList.value.includes('display-hidden')) {
+        THREE_PHONE_SCREEN_RIGHT.classList.remove('display-hidden')
+    } else if(!THREE_PHONE_SCREEN_RIGHT.classList.value.includes('display-hidden')) {
+        THREE_PHONE_SCREEN_RIGHT.classList.add('display-hidden')
+    }
+});
+
+
+
+
+/* THREE_PHONE_SCREEN_CENTER.addEventListener('click', (event) => {
+    console.log(event.target.classList)
+    if(event.target.classList.value.includes('display-hidden')) {
+        THREE_PHONE_SCREEN_CENTER.classList.remove('display-hidden')
+    } else if(!event.target.classList.value.includes('display-hidden')) {
+        THREE_PHONE_SCREEN_CENTER.classList.add('display-hidden')
+    }
+}) */
 
 
 

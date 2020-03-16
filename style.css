@@ -1032,3 +1032,66 @@ a.selected {
 .wrooom {
   transition: 1s;
 }
+
+
+
+
+
+.three-phone-button-center {
+  height: 44px;
+  width: 44px;
+  margin-left: 225px;
+  margin-top: 434px;
+  position: absolute;
+    border-radius: 50%;
+}
+
+.three-phone-screen-center {
+  height: 354px;
+    background-color: black;
+    width: 201px;
+    position: absolute;
+    margin-left: 145px;
+    margin-top: 69px;
+}
+
+
+
+.three-phone-button-left {
+  height: 29px;
+  width: 29px;
+  margin-left: 55px;
+  margin-top: 373px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.three-phone-screen-left {
+  height: 218px;
+    background-color: #252a30;  
+    width: 123px;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 151px;
+}
+
+
+
+
+.three-phone-button-right {
+  height: 29px;
+  width: 29px;
+  margin-left: 415px;
+  margin-top: 373px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.three-phone-screen-right {
+  height: 218px;
+    background-color: #252a30;
+    width: 123px;
+    position: absolute;
+    margin-left: 369px;
+    margin-top: 151px;
+}
