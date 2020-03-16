@@ -34,6 +34,10 @@ const CONTACT_LINK = document.querySelector('.navbar-list-item-contact');
 //----------------------------
 const BUTTON_PHONE_LEFT = document.querySelector('.button-phone-left');
 const BUTTON_PHONE_RIGHT = document.querySelector('.button-phone-right');
+const SCREEN_PHONE_LEFT = document.querySelector('.screen-phone-left');
+const SCREEN_PHONE_RIGHT = document.querySelector('.screen-phone-right');
+const PHONE_VERTICAL_IMG = document.querySelector('.phone-vertical img');
+const PHONE_HORIZONTAL_IMG = document.querySelector('.phone-horizontal img');
 
 //----------------------------
 // CONTACT FORM
@@ -178,22 +182,41 @@ MESSAGE_AGREE_HIDDEN.addEventListener('click', (event) => {
     CONTACT_FORM.reset();
 });
 
-
+//----------------------------
+// SLIDER_1_TASK: turning on phone (left) with button
+//----------------------------
 BUTTON_PHONE_LEFT.addEventListener('click', (event) => {
-    console.log(document.querySelector('.phone-vertical img').classList.value.includes('display-hidden'));
-    if(!document.querySelector('.phone-vertical img').classList.value.includes('display-hidden')) {
-        document.querySelector('.phone-vertical img').classList.add('display-hidden')
-    } else if(document.querySelector('.phone-vertical img').classList.value.includes('display-hidden')) {
-        document.querySelector('.phone-vertical img').classList.remove('display-hidden')
+    if(!PHONE_VERTICAL_IMG.classList.value.includes('display-hidden')) {
+        PHONE_VERTICAL_IMG.classList.add('display-hidden')
+    } else if(PHONE_VERTICAL_IMG.classList.value.includes('display-hidden')) {
+        PHONE_VERTICAL_IMG.classList.remove('display-hidden')
     };
 });
 
+//----------------------------
+// SLIDER_1_TASK: turning on phone (right) with button
+//----------------------------
 BUTTON_PHONE_RIGHT.addEventListener('click', (event) => {
-    console.log(document.querySelector('.phone-horizontal img').classList.value.includes('display-hidden'));
-    if(!document.querySelector('.phone-horizontal img').classList.value.includes('display-hidden')) {
-        document.querySelector('.phone-horizontal img').classList.add('display-hidden')
-    } else if(document.querySelector('.phone-horizontal img').classList.value.includes('display-hidden')) {
-        document.querySelector('.phone-horizontal img').classList.remove('display-hidden')
+    if(!PHONE_HORIZONTAL_IMG.classList.value.includes('display-hidden')) {
+        PHONE_HORIZONTAL_IMG.classList.add('display-hidden')
+    } else if(PHONE_HORIZONTAL_IMG.classList.value.includes('display-hidden')) {
+        PHONE_HORIZONTAL_IMG.classList.remove('display-hidden')
     };
 });
+
+//----------------------------
+// SLIDER_1_TASK: turning on phone (left) with screen
+//----------------------------
+PHONE_VERTICAL_IMG.addEventListener('click', (event) => {
+    if(!PHONE_VERTICAL_IMG.classList.value.includes('display-hidden')) {
+        PHONE_VERTICAL_IMG.classList.add('display-hidden')
+    };
+});
+
+SCREEN_PHONE_LEFT.addEventListener('click', (event) => {
+    if(PHONE_VERTICAL_IMG.classList.value.includes('display-hidden')) {
+        PHONE_VERTICAL_IMG.classList.remove('display-hidden')
+    };
+})
+
 
