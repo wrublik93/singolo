@@ -479,6 +479,11 @@ a.selected {
   .left-button {
     outline: none;
   }
+
+  .filter .filter-button::-moz-focus-inner
+   {
+    border: 0;
+  }
   
   /*four-column layout with images (grid)*/
   .portfolio-images {
