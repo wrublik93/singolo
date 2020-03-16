@@ -13,29 +13,45 @@
             <h1 class="main-header-hidden">Singolo</h1>
             <nav class="navbar">
                 <ul class="navbar-list">
-                    <li class="navbar-list-item"><a class="selected" href="">home</a></li>
-                    <li class="navbar-list-item"><a href="">services</a></li>
-                    <li class="navbar-list-item"><a href="">portfolio</a></li>
-                    <li class="navbar-list-item"><a href="">about</a></li>
-                    <li class="navbar-list-item"><a href="">contact</a></li>
+                    <li class="navbar-list-item"><a class="navbar-list-item-home selected" href="#">home</a></li>
+                    <li class="navbar-list-item"><a class="navbar-list-item-services" href="#services">services</a></li>
+                    <li class="navbar-list-item"><a class="navbar-list-item-portfolio" href="#portfolio">portfolio</a></li>
+                    <li class="navbar-list-item"><a class="navbar-list-item-about" href="#about">about</a></li>
+                    <li class="navbar-list-item"><a class="navbar-list-item-contact" href="#contact">contact</a></li>
                 </ul>    
             </nav>
         </div>
     </header>
     <main>
-        <section class="slider">
+        <section class="slider slide_one wrooom">
             <div class="wrapper">
-                <button type="button" class="slider-button"></button>
+                <button type="button" class="slider-button left-button"></button>
                 <div class="phone phone-vertical slider-phone-left">
+                    <div class="button-phone-left"></div>
+                    <div class="screen-phone-left"></div>
                     <img class="phone-display" src="./assets/img/slider/phone-vertical-display.png" alt="Phone vertical">
                 </div>
                 <div class="phone phone-horizontal slider-phone-right">
+                    <div class="button-phone-right"></div>
+                    <div class="screen-phone-right"></div>
                     <img class="phone-display" src="./assets/img/slider/phone-horizontal-display.png" alt="Phone horizontal">
+                </div>
+                <div class="slider-three-phone slide-two-hidden">
+                    <div class="three-phone-button-center"></div>
+                    <div class="three-phone-screen-center display-hidden"></div>
+                    <div class="three-phone-screen-center-transparent"></div>
+                    <div class="three-phone-button-left"></div>
+                    <div class="three-phone-screen-left display-hidden"></div>
+                    <div class="three-phone-screen-left-transparent"></div>
+                    <div class="three-phone-button-right"></div>
+                    <div class="three-phone-screen-right display-hidden"></div>
+                    <div class="three-phone-screen-right-transparent"></div>
+                    <img src="./assets/img/slider/slider-2.png"> 
                 </div>
                 <button type="button" class="slider-button right-button"></button>
             </div>
         </section>
-        <section class="services">
+        <section class="services"> 
             <div class="wrapper">
                 <h2>Our Services</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
@@ -76,6 +92,7 @@
                 </div>
             </div>
         </section>
+        <section></section>
         <section class="portfolio">
             <div class="wrapper">
                 <h2>Portfolio</h2>
@@ -153,25 +170,41 @@
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
                     Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget 
                     lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-                     tortor mauris condimentum nibh.</p>
-                    <div class="contact-layout">
-                        <form class="contact-form" method="POST">
-                            <input class="contact-form-name" type="text" name="name" placeholder="Name (Required)" required>
-                            <input type="email" name="email" placeholder="Email (Required)" required>
-                            <input class="contact-form-subject" type="text" name="subject" placeholder="Subject">
-                            <textarea class="contact-form-description" name="description" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>
-                            <button type="submit" formmethod="POST">Submit</button> 
-                        </form>
-                        <div class="contact-info">
-                            <h3>Contact Information</h3>
-                            <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. 
-                                Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed 
-                                nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                            <p class="address">Elm St. 14/05 Lost City</p>
-                            <a class="phone" href="tel:035283318635">03528 331 86 35</a>
-                            <a class="email" href="mailto:info@singolo.com">info@singolo.com</a>
+                     tortor mauris condimentum nibh.
+                </p>
+                <div class="contact-layout">
+                    <!-- <form class="contact-form" method="POST"> -->
+                    <form class="contact-form" method="POST">
+                        <input class="contact-form-name" type="text" name="name" placeholder="Name (Required)" required>
+                        <input class="contact-form-email" type="email" name="email" placeholder="Email (Required)" required>
+                        <input class="contact-form-subject" type="text" name="subject" placeholder="Subject">
+                        <textarea class="contact-form-description" name="description" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>
+                        <!-- <button type="submit" formmethod="POST">Submit</button>  -->
+                        <button class="contact-form-submit">Submit</button> 
+                    </form>
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. 
+                            Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed 
+                            nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+                        </p>
+                        <p class="address">Elm St. 14/05 Lost City</p>
+                        <a class="phone" href="tel:035283318635">03528 331 86 35</a>
+                        <a class="email" href="mailto:info@singolo.com">info@singolo.com</a>
+                    </div>
+                </div>
+                <div class="block-message block-message-hidden">
+                    <div class="message">
+                        <p class="block-message-status">Письмо отправлено</p>
+                        <hr>
+                        <p class="block-message-subject"></p>
+                        <hr>
+                        <p class="block-message-description"></p>
+                        <div class="button-agree">
+                            <button class="message-agree-hidden">OK</button> 
                         </div>
                     </div>
+                </div>
             </div>
         </section>
     </main>
@@ -186,5 +219,6 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
