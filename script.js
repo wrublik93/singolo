@@ -219,6 +219,9 @@ SCREEN_PHONE_LEFT.addEventListener('click', (event) => {
     };
 });
 
+//----------------------------
+// SLIDER_1_TASK: turning on phone (right) with screen
+//----------------------------
 PHONE_HORIZONTAL_IMG.addEventListener('click', (event) => {
     if(!PHONE_HORIZONTAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_HORIZONTAL_IMG.classList.add('display-hidden')
@@ -230,5 +233,49 @@ SCREEN_PHONE_RIGHT.addEventListener('click', (event) => {
         PHONE_HORIZONTAL_IMG.classList.remove('display-hidden')
     };
 });
+
+//----------------------------
+// SLIDER_TASK: change images
+//----------------------------
+document.querySelector('.slider .right-button').addEventListener('click', (event) => {
+    document.querySelector('.slider').classList.add('wrooom');
+    if(document.querySelector('.slider').classList.value.includes('slide_one')) {
+        document.querySelector('.slider').classList.remove('slide_one');
+        document.querySelector('.slider').classList.add('slider_two');
+        document.querySelector('.slider-phone-left').classList.add('slide-hidden');
+        document.querySelector('.slider-phone-left').classList.add('wrooom');
+        document.querySelector('.slider-phone-right').classList.add('slide-hidden');
+        document.querySelector('.slider-three-phone').classList.remove('slide-two-hidden');
+
+    } else {
+        document.querySelector('.slider').classList.remove('slider_two');
+        document.querySelector('.slider').classList.add('slide_one');
+        document.querySelector('.slider-phone-left').classList.remove('slide-hidden');
+        document.querySelector('.slider-phone-right').classList.remove('slide-hidden');
+        document.querySelector('.slider-three-phone').classList.add('slide-two-hidden');
+    }
+});
+
+document.querySelector('.slider .left-button').addEventListener('click', (event) => {
+    document.querySelector('.slider').classList.add('wrooom');
+    if(document.querySelector('.slider').classList.value.includes('slide_one')) {
+        document.querySelector('.slider').classList.remove('slide_one');
+        document.querySelector('.slider').classList.add('slider_two');
+        document.querySelector('.slider-phone-left').classList.add('slide-hidden');
+        document.querySelector('.slider-phone-left').classList.add('wrooom');
+        document.querySelector('.slider-phone-right').classList.add('slide-hidden');
+        document.querySelector('.slider-three-phone').classList.remove('slide-two-hidden');
+
+    } else {
+        document.querySelector('.slider').classList.remove('slider_two');
+        document.querySelector('.slider').classList.add('slide_one');
+        document.querySelector('.slider-phone-left').classList.remove('slide-hidden');
+        document.querySelector('.slider-phone-right').classList.remove('slide-hidden');
+        document.querySelector('.slider-three-phone').classList.add('slide-two-hidden');
+    }
+});
+
+
+
 
 
