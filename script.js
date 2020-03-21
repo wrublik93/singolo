@@ -237,11 +237,13 @@ SCREEN_PHONE_RIGHT.addEventListener('click', (event) => {
 //----------------------------
 // SLIDER_TASK: change images
 //----------------------------
-/* const SLIDER_LEFT_BUTTON = document.querySelector('.slider .left-button');
+ const SLIDER_LEFT_BUTTON = document.querySelector('.slider .left-button');
 const SLIDER_RIGHT_BUTTON = document.querySelector('.slider .right-button');
 const SLIDER_PHONE_LEFT = document.querySelector('.slider-phone-left');
 const SLIDER_PHONE_RIGHT = document.querySelector('.slider-phone-right');
 const SLIDER_THREE_PHONE = document.querySelector('.slider-three-phone');
+
+/*
 
 SLIDER_RIGHT_BUTTON.addEventListener('click', (event) => {
     if(SLIDER.classList.value.includes('slide_one')) {
@@ -279,7 +281,7 @@ SLIDER_LEFT_BUTTON.addEventListener('click', (event) => {
 //----------------------------
 // SLIDER_2_TASK: turning on phone (center) with button and screen
 //----------------------------
-/* const THREE_PHONE_BUTTON_CENTER = document.querySelector('.three-phone-button-center');
+ const THREE_PHONE_BUTTON_CENTER = document.querySelector('.three-phone-button-center');
 const THREE_PHONE_SCREEN_CENTER = document.querySelector('.three-phone-screen-center');
 const THREE_PHONE_SCREEN_CENTER_TRANSPARENT = document.querySelector('.three-phone-screen-center-transparent');
 
@@ -305,7 +307,7 @@ THREE_PHONE_SCREEN_CENTER.addEventListener('click', (event) => {
         THREE_PHONE_SCREEN_CENTER.classList.add('display-hidden');
         THREE_PHONE_SCREEN_CENTER_TRANSPARENT.classList.remove('display-hidden');
     }
-}); */
+}); 
 
 //----------------------------
 // SLIDER_2_TASK: turning on phone (left) with button and screen
@@ -429,8 +431,12 @@ document.querySelector('.right-button').addEventListener('click', function() {
 
 let isBlue = () => {
     if (document.querySelector('.blue').classList.contains('next')) {
-        document.querySelector('.main').style.backgroundColor = '#648BF0'
-    } else { document.querySelector('.main').style.backgroundColor = '#e36861' }
+        document.querySelector('.slider').style.backgroundColor = '#648BF0';
+        document.querySelector('.slider').style.borderBottom = '6px solid #5C85EF';
+    } else { document.querySelector('.slider').style.backgroundColor = '#f06c64';
+    document.querySelector('.slider').style.borderBottom = '6px solid #ea676b';
+
+}
 }
 
 

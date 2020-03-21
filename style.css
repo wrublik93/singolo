@@ -1040,7 +1040,7 @@ a.selected {
   padding-bottom: 42px;
 }
 
-
+/*
 .slider_two .wrapper {
   display: flex;
   align-items: center;
@@ -1061,6 +1061,8 @@ a.selected {
   transition: 1s;
 }
 
+*/
+
 
 
 
@@ -1068,28 +1070,28 @@ a.selected {
 .three-phone-button-center {
   height: 44px;
   width: 44px;
-  margin-left: 225px;
-  margin-top: 434px;
+  margin-left: -12px;
+  margin-top: 198px;
   position: absolute;
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .three-phone-screen-center {
-  height: 354px;
+  height: 355px;
     background-color: black;
 
     width: 201px;
     position: absolute;
-    margin-left: 145px;
-    margin-top: 69px;
+    margin-left: -13px;
+    margin-top: -10px;
 }
 
 .three-phone-screen-center-transparent {
-  height: 354px;  
-    width: 201px;
-    position: absolute;
-    margin-left: 145px;
-    margin-top: 69px;
+  height: 355px;
+  width: 201px;
+  position: absolute;
+  margin-left: -13px;
+  margin-top: -10px;
 }
 
 
@@ -1147,7 +1149,7 @@ a.selected {
     position: absolute;
     margin-left: 369px;
     margin-top: 151px;
-} */
+} 
 
 
 
