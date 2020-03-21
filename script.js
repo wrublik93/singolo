@@ -185,29 +185,29 @@ MESSAGE_AGREE_HIDDEN.addEventListener('click', (event) => {
 //----------------------------
 // SLIDER_1_TASK: turning on phone (left) with button
 //----------------------------
-BUTTON_PHONE_LEFT.addEventListener('click', (event) => {
+/* BUTTON_PHONE_LEFT.addEventListener('click', (event) => {
     if(!PHONE_VERTICAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_VERTICAL_IMG.classList.add('display-hidden')
     } else if(PHONE_VERTICAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_VERTICAL_IMG.classList.remove('display-hidden')
     };
-});
+}); */
 
 //----------------------------
 // SLIDER_1_TASK: turning on phone (right) with button
 //----------------------------
-BUTTON_PHONE_RIGHT.addEventListener('click', (event) => {
+/* BUTTON_PHONE_RIGHT.addEventListener('click', (event) => {
     if(!PHONE_HORIZONTAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_HORIZONTAL_IMG.classList.add('display-hidden')
     } else if(PHONE_HORIZONTAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_HORIZONTAL_IMG.classList.remove('display-hidden')
     };
-});
+}); */
 
 //----------------------------
 // SLIDER_1_TASK: turning on phone (left) with screen
 //----------------------------
-PHONE_VERTICAL_IMG.addEventListener('click', (event) => {
+/* PHONE_VERTICAL_IMG.addEventListener('click', (event) => {
     if(!PHONE_VERTICAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_VERTICAL_IMG.classList.add('display-hidden')
     };
@@ -218,11 +218,11 @@ SCREEN_PHONE_LEFT.addEventListener('click', (event) => {
         PHONE_VERTICAL_IMG.classList.remove('display-hidden')
     };
 });
-
+ */
 //----------------------------
 // SLIDER_1_TASK: turning on phone (right) with screen
 //----------------------------
-PHONE_HORIZONTAL_IMG.addEventListener('click', (event) => {
+/* PHONE_HORIZONTAL_IMG.addEventListener('click', (event) => {
     if(!PHONE_HORIZONTAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_HORIZONTAL_IMG.classList.add('display-hidden')
     };
@@ -232,12 +232,12 @@ SCREEN_PHONE_RIGHT.addEventListener('click', (event) => {
     if(PHONE_HORIZONTAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_HORIZONTAL_IMG.classList.remove('display-hidden')
     };
-});
+}); */
 
 //----------------------------
 // SLIDER_TASK: change images
 //----------------------------
-const SLIDER_LEFT_BUTTON = document.querySelector('.slider .left-button');
+/* const SLIDER_LEFT_BUTTON = document.querySelector('.slider .left-button');
 const SLIDER_RIGHT_BUTTON = document.querySelector('.slider .right-button');
 const SLIDER_PHONE_LEFT = document.querySelector('.slider-phone-left');
 const SLIDER_PHONE_RIGHT = document.querySelector('.slider-phone-right');
@@ -274,12 +274,12 @@ SLIDER_LEFT_BUTTON.addEventListener('click', (event) => {
         SLIDER_PHONE_RIGHT.classList.remove('slide-hidden');
         SLIDER_THREE_PHONE.classList.add('slide-two-hidden');
     }
-});
+}); */
 
 //----------------------------
 // SLIDER_2_TASK: turning on phone (center) with button and screen
 //----------------------------
-const THREE_PHONE_BUTTON_CENTER = document.querySelector('.three-phone-button-center');
+/* const THREE_PHONE_BUTTON_CENTER = document.querySelector('.three-phone-button-center');
 const THREE_PHONE_SCREEN_CENTER = document.querySelector('.three-phone-screen-center');
 const THREE_PHONE_SCREEN_CENTER_TRANSPARENT = document.querySelector('.three-phone-screen-center-transparent');
 
@@ -305,12 +305,12 @@ THREE_PHONE_SCREEN_CENTER.addEventListener('click', (event) => {
         THREE_PHONE_SCREEN_CENTER.classList.add('display-hidden');
         THREE_PHONE_SCREEN_CENTER_TRANSPARENT.classList.remove('display-hidden');
     }
-});
+}); */
 
 //----------------------------
 // SLIDER_2_TASK: turning on phone (left) with button and screen
 //----------------------------
-const THREE_PHONE_BUTTON_LEFT = document.querySelector('.three-phone-button-left');
+/* const THREE_PHONE_BUTTON_LEFT = document.querySelector('.three-phone-button-left');
 const THREE_PHONE_SCREEN_LEFT = document.querySelector('.three-phone-screen-left');
 const THREE_PHONE_SCREEN_LEFT_TRANSPARENT = document.querySelector('.three-phone-screen-left-transparent');
 
@@ -337,11 +337,11 @@ THREE_PHONE_SCREEN_LEFT.addEventListener('click', (event) => {
         THREE_PHONE_SCREEN_LEFT_TRANSPARENT.classList.remove('display-hidden');
     };
 });
-
+ */
 //----------------------------
 // SLIDER_2_TASK: turning on phone (right) with button and screen
 //----------------------------
-const THREE_PHONE_BUTTON_RIGHT = document.querySelector('.three-phone-button-right');
+/* const THREE_PHONE_BUTTON_RIGHT = document.querySelector('.three-phone-button-right');
 const THREE_PHONE_SCREEN_RIGHT = document.querySelector('.three-phone-screen-right');
 const THREE_PHONE_SCREEN_RIGHT_TRANSPARENT = document.querySelector('.three-phone-screen-right-transparent');
 
@@ -368,7 +368,70 @@ THREE_PHONE_SCREEN_RIGHT.addEventListener('click', (event) => {
         THREE_PHONE_SCREEN_RIGHT.classList.add('display-hidden');
         THREE_PHONE_SCREEN_RIGHT_TRANSPARENT.classList.remove('display-hidden');
     };
-});
+}); */
+
+
+//////// carousel 
+
+let items = document.querySelectorAll('.carousel .item');
+let currentItem = 0;
+let isEnabled = true;
+
+let el = document.querySelector('.carousel');
+
+function changeCurrentItem(n) {
+    currentItem = (n + items.length) % items.length;
+}
+
+function hideItem(direction) {
+    isEnabled = false;
+    items[currentItem].classList.add(direction);
+    items[currentItem].addEventListener('animationend', function() {
+        this.classList.remove('current', direction);
+    });
+}
+
+function showItem(direction) {
+    items[currentItem].classList.add('next', direction);
+    items[currentItem].addEventListener('animationend', function() {
+        this.classList.remove('next', direction);
+        this.classList.add('current');
+        isEnabled = true;
+    })
+}
+
+function previousItem(n) {
+    hideItem('to-right');
+    changeCurrentItem(n - 1);
+    showItem('from-left');
+}
+
+function nextItem(n) {
+    hideItem('to-left');
+    changeCurrentItem(n + 1);
+    showItem('from-right');
+}
+
+document.querySelector('.left-button').addEventListener('click', function() {
+    if (isEnabled) {
+        previousItem(currentItem);
+    }
+    isBlue();
+})
+
+
+document.querySelector('.right-button').addEventListener('click', function() {
+    if (isEnabled) {
+        nextItem(currentItem);
+    }
+    isBlue();
+})
+
+let isBlue = () => {
+    if (document.querySelector('.blue').classList.contains('next')) {
+        document.querySelector('.main').style.backgroundColor = '#648BF0'
+    } else { document.querySelector('.main').style.backgroundColor = '#e36861' }
+}
 
 
 
