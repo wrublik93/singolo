@@ -185,29 +185,29 @@ MESSAGE_AGREE_HIDDEN.addEventListener('click', (event) => {
 //----------------------------
 // SLIDER_1_TASK: turning on phone (left) with button
 //----------------------------
-/* BUTTON_PHONE_LEFT.addEventListener('click', (event) => {
+BUTTON_PHONE_LEFT.addEventListener('click', (event) => {
     if(!PHONE_VERTICAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_VERTICAL_IMG.classList.add('display-hidden')
     } else if(PHONE_VERTICAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_VERTICAL_IMG.classList.remove('display-hidden')
     };
-}); */
+});
 
 //----------------------------
 // SLIDER_1_TASK: turning on phone (right) with button
 //----------------------------
-/* BUTTON_PHONE_RIGHT.addEventListener('click', (event) => {
+BUTTON_PHONE_RIGHT.addEventListener('click', (event) => {
     if(!PHONE_HORIZONTAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_HORIZONTAL_IMG.classList.add('display-hidden')
     } else if(PHONE_HORIZONTAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_HORIZONTAL_IMG.classList.remove('display-hidden')
     };
-}); */
+});
 
 //----------------------------
 // SLIDER_1_TASK: turning on phone (left) with screen
 //----------------------------
-/* PHONE_VERTICAL_IMG.addEventListener('click', (event) => {
+ PHONE_VERTICAL_IMG.addEventListener('click', (event) => {
     if(!PHONE_VERTICAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_VERTICAL_IMG.classList.add('display-hidden')
     };
@@ -218,11 +218,11 @@ SCREEN_PHONE_LEFT.addEventListener('click', (event) => {
         PHONE_VERTICAL_IMG.classList.remove('display-hidden')
     };
 });
- */
+
 //----------------------------
 // SLIDER_1_TASK: turning on phone (right) with screen
 //----------------------------
-/* PHONE_HORIZONTAL_IMG.addEventListener('click', (event) => {
+ PHONE_HORIZONTAL_IMG.addEventListener('click', (event) => {
     if(!PHONE_HORIZONTAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_HORIZONTAL_IMG.classList.add('display-hidden')
     };
@@ -232,7 +232,7 @@ SCREEN_PHONE_RIGHT.addEventListener('click', (event) => {
     if(PHONE_HORIZONTAL_IMG.classList.value.includes('display-hidden')) {
         PHONE_HORIZONTAL_IMG.classList.remove('display-hidden')
     };
-}); */
+}); 
 
 //----------------------------
 // SLIDER_TASK: change images
