@@ -1098,28 +1098,28 @@ a.selected {
 
 .three-phone-button-left {
   height: 29px;
-  width: 29px;
-  margin-left: 55px;
-  margin-top: 373px;
-  position: absolute;
-  border-radius: 50%;
+    width: 29px;
+    margin-left: -189px;
+    margin-top: 131px;
+    position: absolute;
+    border-radius: 50%;
 }
 
 .three-phone-screen-left {
-  height: 218px;
-    background-color: #252a30;  
-    width: 123px;
-    position: absolute;
-    margin-left: 8px;
-    margin-top: 151px;
+  height: 217px;
+  background-color: #252a30;
+  width: 122px;
+  position: absolute;
+  margin-left: -189px;
+  margin-top: 3px;
 }
 
 .three-phone-screen-left-transparent {
-  height: 218px;  
+  height: 218px;
     width: 123px;
     position: absolute;
-    margin-left: 8px;
-    margin-top: 151px;
+    margin-left: -189px;
+    margin-top: 3px;
 }
 
 

@@ -312,7 +312,7 @@ THREE_PHONE_SCREEN_CENTER.addEventListener('click', (event) => {
 //----------------------------
 // SLIDER_2_TASK: turning on phone (left) with button and screen
 //----------------------------
-/* const THREE_PHONE_BUTTON_LEFT = document.querySelector('.three-phone-button-left');
+const THREE_PHONE_BUTTON_LEFT = document.querySelector('.three-phone-button-left');
 const THREE_PHONE_SCREEN_LEFT = document.querySelector('.three-phone-screen-left');
 const THREE_PHONE_SCREEN_LEFT_TRANSPARENT = document.querySelector('.three-phone-screen-left-transparent');
 
@@ -339,7 +339,7 @@ THREE_PHONE_SCREEN_LEFT.addEventListener('click', (event) => {
         THREE_PHONE_SCREEN_LEFT_TRANSPARENT.classList.remove('display-hidden');
     };
 });
- */
+
 //----------------------------
 // SLIDER_2_TASK: turning on phone (right) with button and screen
 //----------------------------
