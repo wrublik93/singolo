@@ -256,7 +256,7 @@ a.selected {
 /*--------------------------------*/
 
 .services {
-  margin-bottom: 0.1em;
+  margin-bottom: 1.5px;
   padding-top: 59px;
   padding-bottom: 29px;
   background-color: #f2f2f2;
@@ -387,9 +387,8 @@ a.selected {
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
   padding-top: 60px;
-  padding-bottom: 67px;
+  padding-bottom: 68px;
   margin-top: 1px;
-  padding-bottom: 4.2em;
 }
   
   /*styles for filter*/
@@ -499,7 +498,8 @@ a.selected {
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
     padding-top: 59px;
-    padding-bottom: 3.99em;
+    padding-bottom: 64px;
+    margin-bottom: -0.5px;
   }
   
   .about-us h2 {
