@@ -202,7 +202,8 @@ a.selected {
 }
 
 .slider-button:hover {
-  filter: brightness(20%);
+  transform: scale(1.5);
+  transition: .1s;
 }
 
 /*styles for phones (common)*/
@@ -1027,14 +1028,9 @@ a.selected {
 .slider-button {
   width: 16px;
   height: 27px;
-  background: url("./assets/img/slider/slider-button-arrow.png") no-repeat;
   border: none;
   cursor: pointer;
   border-radius: 3px;
-}
-
-.right-button {
-  transform: rotate(180deg);
 }
 
 .slider {
@@ -1045,12 +1041,14 @@ a.selected {
 }
 
 .left-button {
+  background: url("./assets/img/slider/slider-button-left.svg") no-repeat;
   position: absolute;
   top: 280px;
   left: 0px;
 }
 
 .right-button {
+  background: url("./assets/img/slider/slider-button-right.svg") no-repeat;
   position: absolute;
   top: 280px;
   right: 0px;
