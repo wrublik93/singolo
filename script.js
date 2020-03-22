@@ -235,53 +235,75 @@ SCREEN_PHONE_RIGHT.addEventListener('click', (event) => {
 }); 
 
 //----------------------------
-// SLIDER_TASK: change images
+// SLIDER_TASK: carousel
 //----------------------------
- const SLIDER_LEFT_BUTTON = document.querySelector('.slider .left-button');
-const SLIDER_RIGHT_BUTTON = document.querySelector('.slider .right-button');
-const SLIDER_PHONE_LEFT = document.querySelector('.slider-phone-left');
-const SLIDER_PHONE_RIGHT = document.querySelector('.slider-phone-right');
-const SLIDER_THREE_PHONE = document.querySelector('.slider-three-phone');
+let items = document.querySelectorAll('.carousel .item');
+let currentItem = 0;
+let isEnabled = true;
+let el = document.querySelector('.carousel');
 
-/*
+function changeCurrentItem(n) {
+    currentItem = (n + items.length) % items.length;
+};
 
-SLIDER_RIGHT_BUTTON.addEventListener('click', (event) => {
-    if(SLIDER.classList.value.includes('slide_one')) {
-        SLIDER.classList.remove('slide_one');
-        SLIDER.classList.add('slider_two');
-        SLIDER_PHONE_LEFT.classList.add('slide-hidden');
-        SLIDER_PHONE_RIGHT.classList.add('slide-hidden');
-        SLIDER_THREE_PHONE.classList.remove('slide-two-hidden');
-    } else {
-        SLIDER.classList.remove('slider_two');
-        SLIDER.classList.add('slide_one');
-        SLIDER_PHONE_LEFT.classList.remove('slide-hidden');
-        SLIDER_PHONE_RIGHT.classList.remove('slide-hidden');
-        SLIDER_THREE_PHONE.classList.add('slide-two-hidden');
+function hideItem(direction) {
+    isEnabled = false;
+    items[currentItem].classList.add(direction);
+    items[currentItem].addEventListener('animationend', function() {
+        this.classList.remove('current', direction);
+    });
+};
+
+function showItem(direction) {
+    items[currentItem].classList.add('next', direction);
+    items[currentItem].addEventListener('animationend', function() {
+        this.classList.remove('next', direction);
+        this.classList.add('current');
+        isEnabled = true;
+    })
+};
+
+function previousItem(n) {
+    hideItem('to-right');
+    changeCurrentItem(n - 1);
+    showItem('from-left');
+};
+
+function nextItem(n) {
+    hideItem('to-left');
+    changeCurrentItem(n + 1);
+    showItem('from-right');
+};
+
+document.querySelector('.left-button').addEventListener('click', function() {
+    if (isEnabled) {
+        previousItem(currentItem);
     }
+    isBlue();
 });
 
-SLIDER_LEFT_BUTTON.addEventListener('click', (event) => {
-    if(SLIDER.classList.value.includes('slide_one')) {
-        SLIDER.classList.remove('slide_one');
-        SLIDER.classList.add('slider_two');
-        SLIDER_PHONE_LEFT.classList.add('slide-hidden');
-        SLIDER_PHONE_RIGHT.classList.add('slide-hidden');
-        SLIDER_THREE_PHONE.classList.remove('slide-two-hidden');
 
-    } else {
-        SLIDER.classList.remove('slider_two');
-        SLIDER.classList.add('slide_one');
-        SLIDER_PHONE_LEFT.classList.remove('slide-hidden');
-        SLIDER_PHONE_RIGHT.classList.remove('slide-hidden');
-        SLIDER_THREE_PHONE.classList.add('slide-two-hidden');
+document.querySelector('.right-button').addEventListener('click', function() {
+    if (isEnabled) {
+        nextItem(currentItem);
     }
-}); */
+    isBlue();
+});
+
+let isBlue = () => {
+    if (document.querySelector('.blue').classList.contains('next')) {
+        document.querySelector('.slider').style.backgroundColor = '#648BF0';
+        document.querySelector('.slider').style.borderBottom = '6px solid #5C85EF';
+    } else { 
+        document.querySelector('.slider').style.backgroundColor = '#f06c64';
+        document.querySelector('.slider').style.borderBottom = '6px solid #ea676b';
+    }
+};
 
 //----------------------------
 // SLIDER_2_TASK: turning on phone (center) with button and screen
 //----------------------------
- const THREE_PHONE_BUTTON_CENTER = document.querySelector('.three-phone-button-center');
+const THREE_PHONE_BUTTON_CENTER = document.querySelector('.three-phone-button-center');
 const THREE_PHONE_SCREEN_CENTER = document.querySelector('.three-phone-screen-center');
 const THREE_PHONE_SCREEN_CENTER_TRANSPARENT = document.querySelector('.three-phone-screen-center-transparent');
 
@@ -371,78 +393,3 @@ THREE_PHONE_SCREEN_RIGHT.addEventListener('click', (event) => {
         THREE_PHONE_SCREEN_RIGHT_TRANSPARENT.classList.remove('display-hidden');
     };
 });
-
-
-//////// carousel 
-
-let items = document.querySelectorAll('.carousel .item');
-let currentItem = 0;
-let isEnabled = true;
-
-let el = document.querySelector('.carousel');
-
-function changeCurrentItem(n) {
-    currentItem = (n + items.length) % items.length;
-}
-
-function hideItem(direction) {
-    isEnabled = false;
-    items[currentItem].classList.add(direction);
-    items[currentItem].addEventListener('animationend', function() {
-        this.classList.remove('current', direction);
-    });
-}
-
-function showItem(direction) {
-    items[currentItem].classList.add('next', direction);
-    items[currentItem].addEventListener('animationend', function() {
-        this.classList.remove('next', direction);
-        this.classList.add('current');
-        isEnabled = true;
-    })
-}
-
-function previousItem(n) {
-    hideItem('to-right');
-    changeCurrentItem(n - 1);
-    showItem('from-left');
-}
-
-function nextItem(n) {
-    hideItem('to-left');
-    changeCurrentItem(n + 1);
-    showItem('from-right');
-}
-
-document.querySelector('.left-button').addEventListener('click', function() {
-    if (isEnabled) {
-        previousItem(currentItem);
-    }
-    isBlue();
-})
-
-
-document.querySelector('.right-button').addEventListener('click', function() {
-    if (isEnabled) {
-        nextItem(currentItem);
-    }
-    isBlue();
-})
-
-let isBlue = () => {
-    if (document.querySelector('.blue').classList.contains('next')) {
-        document.querySelector('.slider').style.backgroundColor = '#648BF0';
-        document.querySelector('.slider').style.borderBottom = '6px solid #5C85EF';
-    } else { document.querySelector('.slider').style.backgroundColor = '#f06c64';
-    document.querySelector('.slider').style.borderBottom = '6px solid #ea676b';
-
-}
-}
-
-
-
-
-
-
-
-
