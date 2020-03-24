@@ -185,7 +185,7 @@ a.selected {
   right: -15px;
   top: 0;
   display: block;
-  color: #494e62;
+  color: #FFFFFF;;
   content: "\00B7";
 }
 
@@ -1174,27 +1174,16 @@ a.selected {
 }
 
 @media (min-width: 768px) and (max-width: 1019px) {
-  .wrapper {
-    width: 100%;
-  }
 
-  .about-us-person-photo {
-    width: 100%;
-  }
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
- 
-  .about-us-person-photo {
-    width: 100%;
-  }
-
-  .about-us-person {
-    flex-grow: 1;
+  .navbar {
+    display: none;
   }
 
 }
 
 @media (max-width: 374px) {
-  
+
 }
