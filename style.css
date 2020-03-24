@@ -1172,3 +1172,29 @@ a.selected {
   margin-left: 172px;
   margin-top: 3px;
 }
+
+@media (min-width: 768px) and (max-width: 1019px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .about-us-person-photo {
+    width: 100%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+ 
+  .about-us-person-photo {
+    width: 100%;
+  }
+
+  .about-us-person {
+    flex-grow: 1;
+  }
+
+}
+
+@media (max-width: 374px) {
+  
+}
