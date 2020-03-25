@@ -1238,6 +1238,27 @@ a.selected {
 } 
 
 @media (min-width: 375px) and (max-width: 767px) {
+  /*Footer*/
+  .copyright {
+    display: none;
+  }
+
+  .footer .social-networks {
+    margin-top: 0;
+    padding-left: 0; 
+    padding-bottom: 0; 
+}
+
+.footer .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
   /*Our services*/
   .services-layout {
     display: flex;
