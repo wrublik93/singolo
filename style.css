@@ -1238,6 +1238,45 @@ a.selected {
 } 
 
 @media (min-width: 375px) and (max-width: 767px) {
+  /*Our services*/
+  .services-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    margin-top: 25px;
+    padding-left: 1px;
+}
+
+.services {
+  margin-bottom: 1.5px;
+  padding-top: 26px;
+  padding-bottom: 10px;
+  background-color: #f2f2f2;
+  border-bottom: 5px solid white;
+}
+
+.services .wrapper {
+  max-width: 1020px;
+  padding: 0 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.services-item {
+  
+  margin-bottom: 24px;
+
+}
+
+
+
+  
+  
+  
+  
+  
   .portfolio {
     padding-top: 42px;
     padding-bottom: 36px;
