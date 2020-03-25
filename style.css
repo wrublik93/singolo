@@ -1197,6 +1197,25 @@ a.selected {
     width: 100%;
     box-sizing: border-box;
   }
+
+  /*About us*/
+  .about-us {
+    padding-top: 52px;
+  }
+
+  .about-us-person-photo {
+    width: 100%;
+  }
+
+  .about-us-person:nth-child(2) {
+    margin-left: 14px;
+}
+
+.about-us-person:nth-child(3) {
+  margin-left: 14px;
+}
+
+
 } 
 
 @media (min-width: 375px) and (max-width: 767px) {
@@ -1213,7 +1232,7 @@ a.selected {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 13px;
-    max-height: 1165px;
+    max-height: 1191px;
   }
 
   .portfolio-image-border {
