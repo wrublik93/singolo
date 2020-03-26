@@ -622,7 +622,7 @@ a.selected {
 
 .quotes {
   padding-top: 60px;
-  padding-bottom: 14px;
+  padding-bottom: 59px;
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
 }
@@ -1178,9 +1178,31 @@ a.selected {
   display: none;
 }
 
+.contact-form button {
+  padding: 12px 15px;
+  width: 136px;
+  box-sizing: border-box;
+  font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+  border: none;
+  border-radius: 5px;
+  background: #FBC65F;
+  color: #886A30;
+}
+
 @media (min-width: 768px) and (max-width: 1019px) {
   /*Contact*/
-  .contact-form input, .contact-form textarea, .contact-form button {
+  .quotes {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+}
+
+  .contact-form input, .contact-form textarea {
     padding: 12px 15px;
     width: 100%;
     box-sizing: border-box;
@@ -1193,6 +1215,21 @@ a.selected {
 
 .contact-form {
   width: 207%;
+}
+
+.contact-form button {
+  padding: 12px 15px;
+  width: 136px;
+  box-sizing: border-box;
+  font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+  border: none;
+  border-radius: 5px;
+  background: #FBC65F;
+  color: #886A30;
 }
 
 
