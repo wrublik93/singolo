@@ -655,6 +655,7 @@ a.selected {
   display: block;
 }
 
+
 /*styles for contact form*/
 .contact-form input,
 .contact-form textarea,
@@ -726,8 +727,8 @@ a.selected {
 
 /*styles for contact information*/
 .contact-info {
-  width: 303px;
-  padding-left: 3px;
+  width: 100%;
+  padding-left: 22px;
   box-sizing: border-box;
 }
 
@@ -1178,6 +1179,24 @@ a.selected {
 }
 
 @media (min-width: 768px) and (max-width: 1019px) {
+  /*Contact*/
+  .contact-form input, .contact-form textarea, .contact-form button {
+    padding: 12px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font: normal 12px/14px "Lato", "Arial", sans-serif;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6564f;
+    color: #f0d8d9;
+}
+
+.contact-form {
+  width: 207%;
+}
+
+
+
   /*Our Services*/
   .services {
     margin-bottom: 1.5px;
