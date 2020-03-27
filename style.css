@@ -658,8 +658,7 @@ a.selected {
 
 /*styles for contact form*/
 .contact-form input,
-.contact-form textarea,
-.contact-form button {
+.contact-form textarea {
   padding: 12px 15px;
   width: 619px;
   box-sizing: border-box;
@@ -711,18 +710,23 @@ a.selected {
 
 /*styles for submit*/
 .contact-form button {
-  padding: 12px 14px 10px;
-  width: initial;
-  background-color: transparent;
-  color: #f0d8d9;
-  border: 1px solid #f0d8d9; 
+  padding: 12px 15px;
+  width: 136px;
+  box-sizing: border-box;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-radius: 5px;
+  background: #FBC65F;
+  color: #886A30;
 }
 
 .contact-form button:hover {
-  padding: 12px 14px 10px;
-  background-color: white;
-  color: #f06c64;
-  border: 1px solid #f06c64; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  cursor: pointer; 
 }
 
 /*styles for contact information*/
@@ -1176,21 +1180,6 @@ a.selected {
 
 .burger {
   display: none;
-}
-
-.contact-form button {
-  padding: 12px 15px;
-  width: 136px;
-  box-sizing: border-box;
-  font-family: Lato;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 17px;
-  border: none;
-  border-radius: 5px;
-  background: #FBC65F;
-  color: #886A30;
 }
 
 @media (min-width: 768px) and (max-width: 1019px) {
