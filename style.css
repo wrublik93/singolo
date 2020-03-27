@@ -1484,15 +1484,13 @@ a.selected {
   }
 }
 
+/*--------------------------------*/
+/*MEDIA 320px - 374px*/
+/*--------------------------------*/
 
+@media (min-width: 320px) and (max-width: 374px) {
 
-
-
-
-
-
-
-@media (max-width: 374px) {
+  /*Section Header*/
   .header {
     border: none;
     height: 71px;
@@ -1509,6 +1507,219 @@ a.selected {
     position: absolute;
     left: 20px;
     top: 26px;
+  }
 
+  /*Section Our Services*/
+  .services {
+    padding-top: 26px;
+    padding-bottom: 10px;
+  }
+
+  .services .wrapper {
+    padding: 0 30px;
+  }
+
+  .services-layout {
+    align-items: center;
+    margin-top: 25px;
+  }
+  
+  .services-item {
+    margin-bottom: 24px;
+  }
+
+  /*Section Portfolio*/
+  .portfolio {
+    padding-top: 42px;
+    padding-bottom: 36px;
+  }
+
+  .portfolio .wrapper {
+    padding: 0 30px;
+  }
+  .portfolio-images {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 13px;
+    max-height: 1221px;
+  }
+
+  .portfolio-image-border {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .portfolio-images img {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .portfolio-images img:nth-child(n+9) {
+    display: none;
+  }
+
+  /*Section About Us*/
+  .about-us {
+    padding-top: 33px;
+    padding-bottom: 39px;
+  }
+
+  .about-us .wrapper {
+    padding: 0 30px;
+  }
+
+  .about-us-layout {
+    flex-direction: column;
+    margin-top: 33px;
+    align-items: center;
+  }
+
+  .about-us-person:nth-child(2),
+  .about-us-person:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .about-us-person {
+    width: 100%;
+  }
+
+  .about-us-person-photo {
+    width: 100%;
+  }
+
+  .social-networks {
+    margin-top: 9px;
+    padding-left: 1px;
+    padding-bottom: 34px;
+  }
+
+  .about-us-person:nth-child(3) .social-networks{
+    padding-bottom: 0;
+  }
+
+  .about-us p {
+    margin-top: 13px;
+  }
+
+   /*Section Get a Quote*/
+   .quotes {
+    padding-top: 44px;
+    padding-bottom: 36px;
+  }
+
+  .quotes .wrapper {
+    padding: 0 30px;
+  }
+
+  .contact-layout {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 26px;
+  }
+
+  .contact-form input, 
+  .contact-form textarea, 
+  .contact-form button {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .quotes p {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font: 300 18px/30px "Lato", "Arial", sans-serif;
+    text-align: justify;
+    letter-spacing: -0.013em;
+  }
+
+  .contact-form .contact-form-name {
+    margin-bottom: 12px;
+    letter-spacing: -0.007em;
+  }
+
+  .contact-form .contact-form-email {
+    margin-bottom: 12px;
+  }
+
+  .contact-form .contact-form-subject {
+    margin-bottom: 12px;
+  }
+
+  .contact-form textarea {
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+
+  .contact-form button {
+    padding: 15px 0 15px;
+    background-color: #FBC65F;
+    color: #886A30;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 32px;
+  } 
+
+  .contact-info {
+    width: 100%;
+    padding-left: 0; 
+    box-sizing: border-box;
+  }
+
+  .contact-info-title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 18px;
+  } 
+
+  .contact-info p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 5px;
+  }
+
+  .contact-info .address {
+    margin-top: 16px;
+  }
+
+  /*Section Footer*/
+  .copyright {
+    display: none;
+  }
+
+  .footer .social-networks {
+    margin-top: 0;
+    padding-left: 0; 
+    padding-bottom: 0; 
+  }
+
+  .footer .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 347px) {
+  .filter {
+    width: 100%;
+  }
+  .filter .filter-button {
+    font-size: 11px;
+    line-height: 12px;
+    padding: 4px 4px 4px;
   }
 }
