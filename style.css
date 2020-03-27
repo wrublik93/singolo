@@ -613,6 +613,7 @@ a.selected {
   }
   
   .social-networks .social-networks-icon:hover {
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
     background-color: #C0C0C0;
   }
 
