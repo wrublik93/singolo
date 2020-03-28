@@ -393,3 +393,29 @@ THREE_PHONE_SCREEN_RIGHT.addEventListener('click', (event) => {
         THREE_PHONE_SCREEN_RIGHT_TRANSPARENT.classList.remove('display-hidden');
     };
 });
+
+
+
+
+/*BURGER*/
+const BURGER = document.querySelector('.burger');
+const NAVBAR = document.querySelector('.navbar');
+const LOGO = document.querySelector('.logo')
+
+BURGER.addEventListener('click', ()=> {
+    console.log(NAVBAR.classList.value)
+    if(!BURGER.classList.value.includes('burger-rotated')) {
+        BURGER.classList.add('burger-rotated');
+        NAVBAR.classList.add('navbar-visible');
+        LOGO.classList.add('logo-transition');
+
+    } else if(BURGER.classList.value.includes('burger-rotated')) {
+        BURGER.classList.remove('burger-rotated');
+        BURGER.classList.add('burger-rotated');
+        BURGER.classList.remove('burger-rotated');
+        NAVBAR.classList.remove('navbar-visible');
+        LOGO.classList.remove('logo-transition');
+    }
+});
+
+
