@@ -1485,6 +1485,23 @@ a.selected {
     justify-content: center;
     align-items: center;
   }
+
+  /*Section Message*/
+  .message {
+    padding: 15px;
+    width: 80%;
+  }
+
+  .message .block-message-status,
+  .message .block-message-subject,
+  .message .block-message-description {
+    margin-top: 0;
+  }
+
+  .message .block-message-subject,
+  .message .block-message-description {
+    font-size: 14px;
+  }
 }
 
 /*--------------------------------*/
@@ -1712,6 +1729,26 @@ a.selected {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+   /*Section Message*/
+   .message {
+    padding: 10px;
+    width: 85%;
+  }
+
+  .message .block-message-status,
+  .message .block-message-subject,
+  .message .block-message-description {
+    margin-top: 0;
+  }
+
+  .message .block-message-status {
+    font-size: 14px;
+  }
+  .message .block-message-subject,
+  .message .block-message-description {
+    font-size: 12px;
   }
 }
 
