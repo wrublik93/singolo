@@ -2096,7 +2096,7 @@ a.selected {
     z-index: 10;
     margin: 0;
     height: 100vh;
-    width: 74%;
+    width: 278px;
     background-color: #2d303a;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
     transition: left 0.6s;
@@ -2115,7 +2115,6 @@ a.selected {
   font-size: 24px;
   line-height: 29px;
   letter-spacing: -0.035em;
-  padding-top: 11px;
 }
 
 .burger {
@@ -2126,18 +2125,33 @@ a.selected {
   z-index: 12;
 }
 
-.navbar-visible ul {
+.navbar-visible .navbar-list {
+  position: absolute;
+  top: 173px;
+  left: 71px;
+}
+
+.navbar-list {
+  margin: 0;
+}
+
+.navbar-list .navbar-list-item {
   position: relative;
-  padding-inline-start: 0;
-  top: 233px;
-  left: 72px;
+  height: 30px; 
+  margin-left: 0;
+  margin-top: 18px;
+}
+
+.navbar-list .navbar-list-item:first-child {
+  margin-top: 0px;
 }
 
 .logo-transition {
   position: absolute;
   left: 71px;
-top: 24px;
-transition: right .5s;
+  top: 24px;
+  transition: right .5s;
 }
+
 
 }

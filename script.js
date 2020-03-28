@@ -113,6 +113,13 @@ window.addEventListener('scroll', () => {
         NAVBAR_LIST.querySelectorAll('a').forEach(el => el.classList.remove('selected'));
         CONTACT_LINK.classList.add('selected');
     };
+
+    if(NAVBAR.classList.value.includes('navbar-visible')) {
+        NAVBAR.classList.remove('navbar-visible');
+        BURGER.classList.add('burger-rotated');
+        BURGER.classList.remove('burger-rotated');
+        LOGO.classList.remove('logo-transition');
+    }
 })
 
 //----------------------------
