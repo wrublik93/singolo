@@ -1710,7 +1710,6 @@ a.selected {
     justify-content: center;
     align-items: center;
   }
-
 }
 
 @media (min-width: 320px) and (max-width: 347px) {
@@ -1722,4 +1721,296 @@ a.selected {
     line-height: 12px;
     padding: 4px 4px 4px;
   }
+}
+
+@media (max-width: 319px) {
+
+  /*Section Header*/
+  .header {
+    border: none;
+    height: 71px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .logo{
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .burger {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 26px;
+  }
+
+  /*Section Our Services*/
+  .services {
+    padding-top: 26px;
+    padding-bottom: 10px;
+  }
+
+  .services .wrapper {
+    padding: 0 20px;
+  }
+
+  .services h2 {
+    font-size: 25px;
+  }
+
+  .services .services-description {
+      font: 300 15px/30px "Lato";
+  }
+
+
+  .services-layout {
+    align-items: center;
+    margin-top: 25px;
+  }
+  
+  .services-item {
+    align-content: center;
+    width: 100%;
+    margin-bottom: 24px;
+    padding-top: 72px;
+    padding-left: 0;
+    background-position-x: center;
+  }
+
+  .services h3 {
+    text-align: center;
+  }
+
+
+  /*Section Portfolio*/
+  .portfolio {
+    padding-top: 42px;
+    padding-bottom: 36px;
+  }
+
+  .portfolio .wrapper {
+    padding: 0 20px;
+  }
+
+  .portfolio h2 {
+    font-size: 25px;
+  }
+
+  .portfolio .portfolio-description {
+    font: 300 15px/30px "Lato";
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    margin: 10px 0 19px;
+  }
+
+  .filter .filter-button {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  .filter .filter-button:nth-child(n) {
+    margin-left: 0;
+  }
+
+  .portfolio-images {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    max-height: 1221px;
+  }
+
+  .portfolio-image-border {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .portfolio-images img {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .portfolio-images img:nth-child(n+9) {
+    display: none;
+  }
+
+  /*Section About Us*/
+  .about-us {
+    padding-top: 33px;
+    padding-bottom: 39px;
+  }
+
+  .about-us .wrapper {
+    padding: 0 20px;
+  }
+
+  .about-us h2 {
+    font-size: 25px;
+  }
+
+  .about-us .about-us-description {
+    font: 300 15px/30px "Lato";
+  }
+
+  .about-us-layout {
+    flex-direction: column;
+    margin-top: 33px;
+    align-items: center;
+  }
+
+  .about-us-person:nth-child(2),
+  .about-us-person:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .about-us-person {
+    width: 100%;
+  }
+
+  .about-us-person-photo {
+    width: 100%;
+  }
+
+  .social-networks {
+    margin-top: 9px;
+    padding-left: 1px;
+    padding-bottom: 34px;
+  }
+
+  .about-us-person:nth-child(3) .social-networks{
+    padding-bottom: 0;
+  }
+
+  .about-us p {
+    margin-top: 13px;
+  }
+
+   /*Section Get a Quote*/
+  .quotes {
+    padding-top: 44px;
+    padding-bottom: 36px;
+  }
+
+  .quotes .wrapper {
+    padding: 0 20px;
+  }
+
+  .quotes h2 {
+    font-size: 25px;
+  }
+
+  .quotes .quotes-description {
+    font: 300 15px/30px "Lato";
+  }
+
+  .contact-layout {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 26px;
+  }
+
+  .contact-form input, 
+  .contact-form textarea, 
+  .contact-form button {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .quotes p {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font: 300 18px/30px "Lato", "Arial", sans-serif;
+    text-align: justify;
+    letter-spacing: -0.013em;
+  }
+
+  .contact-form .contact-form-name {
+    margin-bottom: 12px;
+    letter-spacing: -0.007em;
+  }
+
+  .contact-form .contact-form-email {
+    margin-bottom: 12px;
+  }
+
+  .contact-form .contact-form-subject {
+    margin-bottom: 12px;
+  }
+
+  .contact-form textarea {
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+
+  .contact-form button {
+    padding: 15px 0 15px;
+    background-color: #FBC65F;
+    color: #886A30;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 32px;
+  } 
+
+  .contact-info {
+    width: 100%;
+    padding-left: 0; 
+    box-sizing: border-box;
+  }
+
+  .contact-info-title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 18px;
+  } 
+
+  .contact-info p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 5px;
+  }
+
+  .contact-info .address {
+    margin-top: 16px;
+  }
+
+  /*Section Footer*/
+  .copyright {
+    display: none;
+  }
+
+  .footer .social-networks {
+    margin-top: 0;
+    padding-left: 0; 
+    padding-bottom: 0; 
+  }
+
+  .footer .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
 }
