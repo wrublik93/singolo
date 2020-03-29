@@ -113,6 +113,15 @@ window.addEventListener('scroll', () => {
         NAVBAR_LIST.querySelectorAll('a').forEach(el => el.classList.remove('selected'));
         CONTACT_LINK.classList.add('selected');
     };
+
+    if(NAVBAR.classList.value.includes('navbar-visible')) {
+        NAVBAR.classList.remove('navbar-visible');
+        BURGER.classList.add('burger-rotated');
+        BURGER.classList.remove('burger-rotated');
+        LOGO.classList.remove('logo-transition');
+        BODY.classList.remove('scroll-hidden');
+        document.querySelector('.navbar-background').classList.add('display-hidden')
+    }
 })
 
 //----------------------------
@@ -300,7 +309,7 @@ let isBlue = () => {
     }
 };
 
-//----------------------------
+/* //----------------------------
 // SLIDER_2_TASK: turning on phone (center) with button and screen
 //----------------------------
 const THREE_PHONE_BUTTON_CENTER = document.querySelector('.three-phone-button-center');
@@ -393,3 +402,33 @@ THREE_PHONE_SCREEN_RIGHT.addEventListener('click', (event) => {
         THREE_PHONE_SCREEN_RIGHT_TRANSPARENT.classList.remove('display-hidden');
     };
 });
+ */
+
+
+
+/*BURGER*/
+const BURGER = document.querySelector('.burger');
+const NAVBAR = document.querySelector('.navbar');
+const LOGO = document.querySelector('.logo')
+
+BURGER.addEventListener('click', ()=> {
+    console.log(NAVBAR.classList.value)
+    if(!BURGER.classList.value.includes('burger-rotated')) {
+        BURGER.classList.add('burger-rotated');
+        NAVBAR.classList.add('navbar-visible');
+        LOGO.classList.add('logo-transition');
+        BODY.classList.add('scroll-hidden');
+        document.querySelector('.navbar-background').classList.remove('display-hidden')
+
+    } else if(BURGER.classList.value.includes('burger-rotated')) {
+        BURGER.classList.remove('burger-rotated');
+        BURGER.classList.add('burger-rotated');
+        document.querySelector('.navbar-background').classList.add('display-hidden')
+        BURGER.classList.remove('burger-rotated');
+        NAVBAR.classList.remove('navbar-visible');
+        LOGO.classList.remove('logo-transition');
+        BODY.classList.remove('scroll-hidden');
+    }
+});
+
+
