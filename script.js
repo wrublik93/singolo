@@ -114,12 +114,12 @@ window.addEventListener('scroll', () => {
         CONTACT_LINK.classList.add('selected');
     };
 
-    if(NAVBAR.classList.value.includes('navbar-visible')) {
+   /*  if(NAVBAR.classList.value.includes('navbar-visible')) {
         NAVBAR.classList.remove('navbar-visible');
         BURGER.classList.add('burger-rotated');
         BURGER.classList.remove('burger-rotated');
         LOGO.classList.remove('logo-transition');
-    }
+    } */
 })
 
 //----------------------------

@@ -1073,6 +1073,7 @@ a.selected {
   margin-top: 407px;
   margin-left: 85px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .button-phone-right {
@@ -1081,109 +1082,11 @@ a.selected {
   border-radius: 50%;
   margin-top: 84px;
   margin-left: 7px;
+  cursor: pointer;
 } 
 
 .display-hidden {
   display: none;
-}
-
-/*styles for the first slide left phone*/
-.screen-phone-left {
-  width: 188px;
-  height: 333px;
-  margin-top: -385px;
-  margin-left: 14px;
-  background-color: black;
-}
-
-/*styles for the first slide right phone*/
-.screen-phone-right {
-  width: 333px;
-  height: 188px;
-  margin-left: 60px;
-  margin-top: -114px;
-  background-color: black;
-}
-
-/*styles for the second slide center phone*/
-.three-phone-button-center {
-  height: 44px;
-  width: 44px;
-  margin-left: -12px;
-  margin-top: 198px;
-  position: absolute;
-  border-radius: 50%;
-}
-
-.three-phone-screen-center {
-  height: 355px;
-  background-color: black;
-  width: 201px;
-  position: absolute;
-  margin-left: -13px;
-  margin-top: -10px;
-}
-
-.three-phone-screen-center-transparent {
-  height: 355px;
-  width: 201px;
-  position: absolute;
-  margin-left: -13px;
-  margin-top: -10px;
-}
-
-/*styles for the second slide left phone*/
-.three-phone-button-left {
-  height: 29px;
-  width: 29px;
-  margin-left: -189px;
-  margin-top: 131px;
-  position: absolute;
-  border-radius: 50%;
-}
-
-.three-phone-screen-left {
-  height: 217px;
-  background-color: #252a30;
-  width: 122px;
-  position: absolute;
-  margin-left: -189px;
-  margin-top: 3px;
-}
-
-.three-phone-screen-left-transparent {
-  height: 218px;
-  width: 123px;
-  position: absolute;
-  margin-left: -189px;
-  margin-top: 3px;
-}
-
-/*styles for the second slide right phone*/
-.three-phone-button-right {
-  height: 29px;
-  width: 29px;
-  margin-left: 172px;
-  margin-top: 132px;
-  position: absolute;
-  border-radius: 50%;
-}
-
-.three-phone-screen-right {
-  height: 217px;
-  background-color: #252a30;
-  width: 123px;
-  position: absolute;
-  margin-left: 172px;
-  margin-top: 3px;
-}
-
-.three-phone-screen-right-transparent {
-  height: 217px;
-  width: 123px;
-  position: absolute;
-  margin-left: 172px;
-  margin-top: 3px;
 }
 
 .burger {
@@ -2177,6 +2080,15 @@ a.selected {
   cursor: pointer;
 }
 
+.screen-phone-left {
+  width: 188px;
+  height: 333px;
+  margin-top: -385px;
+  margin-left: 14px;
+  background-color: black;
+  cursor: pointer;
+}
+
 .phone-vertical .phone-display:hover {
   cursor: pointer;
 }
@@ -2185,9 +2097,162 @@ a.selected {
   cursor: pointer;
 }
 
+.screen-phone-right {
+  width: 333px;
+  height: 188px;
+  margin-left: 60px;
+  margin-top: -114px;
+  background-color: black;
+  cursor: pointer;
+}
+
 .phone-horizontal .phone-display:hover {
   cursor: pointer;
 }
+
+.three-phone-background .three-phone-button-center {
+  position: absolute;
+}
+
+.three-phone-background .three-phone-screen-center {
+  position: absolute;
+}
+
+.three-phone-background .three-phone-screen-center-transparent {
+  position: absolute;
+}
+
+.three-phone-background .three-phone-button-left {
+  position: absolute;
+}
+
+.three-phone-background .three-phone-screen-left {
+  position: absolute;
+}
+
+.three-phone-background .three-phone-screen-left-transparent {
+  position: absolute;
+}
+
+.three-phone-background .three-phone-button-right {
+  position: absolute;
+}
+
+.three-phone-background .three-phone-screen-right {
+  position: absolute;
+}
+
+.three-phone-background .three-phone-screen-right-transparent {
+  position: absolute;
+}
+
+.three-phone-background {
+  position: absolute;
+    max-width: 517px;
+    max-height: 513px;
+    width: 46vw;
+    height: 46vw;
+    background-image: url(./assets/img/slider/slider-2.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.three-phone-button-center {
+  max-height: 44px;
+  max-width: 44px;
+  width: 4.1vw;
+  height: 4.1vw;
+  top: 38.8vw;
+  left: 20vw;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.three-phone-screen-center {
+  max-height: 355px;
+    background-color: black;
+    max-width: 201px;
+    height: 31.9vw;
+    width: 18vw;
+    top: 6.15vw;
+    left: 13vw;
+    cursor: pointer;
+}
+
+.three-phone-screen-center-transparent {
+  max-height: 355px;
+  max-width: 201px;
+  height: 31.8vw;
+  width: 18vw;
+  top: 6.2vw;
+  left: 13vw;
+  cursor: pointer;
+}
+
+.three-phone-button-left {
+  max-height: 29px;
+  max-width: 29px;
+  top: 33.7vw;
+  left: 5.2vw;
+  height: 2.2vw;
+  width: 2.2vw;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.three-phone-screen-left {
+  max-height: 217px;
+  background-color: #252a30;
+  max-width: 122px;
+  width: 10.95vw;
+  height: 19.5vw;
+  top: 13.55vw;
+  left: 0.8vw;
+  cursor: pointer;
+}
+
+.three-phone-screen-left-transparent {
+  max-height: 217px;
+    max-width: 122px;
+    width: 10.95vw;
+    height: 19.4vw;
+    top: 13.6vw;
+    left: 0.8vw;
+    cursor: pointer;
+}
+
+.three-phone-button-right {
+  max-height: 29px;
+  max-width: 29px;
+  border-radius: 50%;
+  height: 2.2vw;
+  width: 2.2vw;
+  top: 33.7vw;
+  left: 37.5vw;
+  cursor: pointer;
+}
+
+.three-phone-screen-right {
+  max-height: 217px;
+  background-color: #252a30;
+  max-width: 122px;
+  width: 11.2vw;
+  height: 19.5vw;
+  top: 13.55vw;
+  left: 33.1vw;
+  cursor: pointer;
+}
+
+.three-phone-screen-right-transparent {
+  max-height: 217px;
+  max-width: 122px;
+  width: 11.2vw;
+  height: 19.5vw;
+  top: 13.5vw;
+  left: 33vw;
+  cursor: pointer;
+}
+
 
 
 
@@ -2362,7 +2427,5 @@ a.selected {
   top: 27.5vw;
   left: 0px;
 }
-
-
 
 }
