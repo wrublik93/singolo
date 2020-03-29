@@ -307,7 +307,7 @@ let isBlue = () => {
     }
 };
 
-//----------------------------
+/* //----------------------------
 // SLIDER_2_TASK: turning on phone (center) with button and screen
 //----------------------------
 const THREE_PHONE_BUTTON_CENTER = document.querySelector('.three-phone-button-center');
@@ -400,7 +400,7 @@ THREE_PHONE_SCREEN_RIGHT.addEventListener('click', (event) => {
         THREE_PHONE_SCREEN_RIGHT_TRANSPARENT.classList.remove('display-hidden');
     };
 });
-
+ */
 
 
 
